@@ -15,4 +15,15 @@
 
     // fetch the products
     const { data: products } = await useFetch('https://fakestoreapi.com/products')
+
+    useHead({
+        title: 'Nuxt Dojo | Merch',
+        meta: [
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'Nuxt 3 Merch'
+            }
+        ]
+    })
 </script>
